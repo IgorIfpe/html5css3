@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAYA,AAAA,KAAK,CAAA;EACD,gBAAgB,EAbD,OAAO;CAczB;;AAED,AAAA,IAAI,CAAA;EACA,gBAAgB,EAdF,OAAO;CAexB;;AAED,AAAA,GAAG,CAAA;EACC,gBAAgB,EAfH,OAAO;CAgBvB",
+    "sources": [
+        "main.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
