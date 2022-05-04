@@ -10,6 +10,34 @@ $secondaryJsColor: #F1BF26;
 $fontDefaultColor: #000000;
 $backgroundDefaultColor: #FFFFFF;
 
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+        margin: 50px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    h3{
+        max-width: 500px;
+    }
+}
+
+.conteudo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        max-width: 600px;
+    }
+}
+
 #html{
     background-color: $primaryHtmlColor;
 }
@@ -22,3 +50,6 @@ $backgroundDefaultColor: #FFFFFF;
     background-color: $primaryJsColor;
 }
 
+#links{
+
+}

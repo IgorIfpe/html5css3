@@ -1,3 +1,43 @@
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section img {
+  margin: 50px;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+section h3 {
+  max-width: 500px;
+}
+
+.conteudo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteudo p {
+  max-width: 600px;
+}
+
 #html {
   background-color: #E44D26;
 }
