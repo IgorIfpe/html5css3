@@ -24,10 +24,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -36,16 +32,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .flex-container-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -54,6 +50,54 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.listaDeLinks {
+  width: 30vw;
+}
+
+.listaDeLinks ul {
+  list-style-type: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.listaDeLinks li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.listaDeLinks img {
+  width: 50px;
+  height: 50px;
+}
+
+.listaDeLinks a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .menu {
@@ -75,6 +119,12 @@
   margin: 20px;
 }
 
+.alinharTop {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 main, section {
   height: 70vh;
   text-align: center;
@@ -85,6 +135,7 @@ main, section {
   background-color: #000000;
   color: white;
   padding: 10px 20px;
+  margin-top: 20px;
   border-radius: 10px;
   text-decoration: none;
   width: 200px;
@@ -107,6 +158,11 @@ main, section {
 
 .destaqueJS {
   color: #E5A228;
+}
+
+.section-details {
+  width: 70vw;
+  padding: 3vw;
 }
 
 #html {
@@ -140,9 +196,14 @@ main, section {
   background-color: #000000;
 }
 
+.rodape p {
+  margin: 8px;
+}
+
 .rodape img {
   width: 32px;
   width: 32px;
+  margin: 8px;
 }
 
 @media (orientation: landscape) {

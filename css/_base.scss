@@ -21,20 +21,51 @@
     }
 }
 
-.flex-container-row{
+//Caracteristicas de um flex-container
+@mixin flex-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+.flex-container-row{
+    @include flex-container();
+    flex-direction: row;
+}
+
 .flex-container-column{
-    display: flex;
+    @include flex-container();
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+}
+
+.listaDeLinks{
+    
+    width: 30vw;
+    
+    ul {
+        list-style-type: none;
+        align-items: flex-start;
+    }
+
+    li{
+        @include flex-container();
+        
+        flex-direction: row;
+        margin-bottom: 10px;
+        justify-content: start;
+    }
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
+
+    a{
+        margin: 0 20px;
+        text-decoration: none;
+        color: $fontDefaultColor;
+    }
 }
 
 .menu{
@@ -52,6 +83,10 @@
     }
 }
 
+.alinharTop{
+    align-items: flex-start;
+}
+
 main, section{
     height: 70vh;
     text-align: center;
@@ -61,8 +96,10 @@ main, section{
 .button{
     background-color: $backgroundSecundaryColor;
     color: white;
-    padding: 10px 20px;
+
+    padding: 10px 20px;margin-top: 20px;
     border-radius: 10px;
+    
     text-decoration: none;
     width: 200px;
     font-weight: 900;
@@ -73,7 +110,7 @@ main, section{
     background-position: center;
     background-repeat: no-repeat;
 }
-
+ 
 .destaqueHTML{
     color: $primaryHtmlColor;
 }
@@ -84,6 +121,11 @@ main, section{
 
 .destaqueJS{
     color: $primaryJsColor;
+}
+
+.section-details {
+    width: 70vw;
+    padding: 3vw;
 }
 
 #html{
@@ -108,8 +150,13 @@ main, section{
     color: $fontSecundaryColor;
     background-color: $backgroundSecundaryColor;
 
+    p{
+        margin: 8px;
+    }
+
     img{
         width: 32px;
         width: 32px;
+        margin: 8px;
     }
 }
