@@ -1,159 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
 * {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.conteudo {
+* h1, * h2, * h3, * p {
+  margin-bottom: 0.8rem;
+}
+
+* ul {
+  list-style-type: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* mark {
+  background-color: inherit;
+}
+
+.flex-container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-container-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: justify;
 }
 
-.conteudo h2 {
-  font-size: 38px;
-  margin-bottom: 16px;
-}
-
-.conteudo h3 {
-  font-size: 24px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.conteudo p {
-  max-width: 600px;
-  font-size: 16px;
-}
-
-.conteudo a {
-  font-size: 20px;
-  padding: 10px 60px 10px 60px;
-  margin-top: 24px;
-  text-decoration: none;
-  color: white;
+.menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #000000;
-  width: 120px;
+}
+
+main, section {
+  height: 70vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
   border-radius: 10px;
-  text-align: center;
+  text-decoration: none;
+  width: 200px;
+  font-weight: 900;
 }
 
-#html {
-  background-color: #E44D26;
-  height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#destaque {
+  background: url(/img/Destaque_o20.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.destaqueHTML {
+  color: #E44D26;
+}
+
+.destaqueCSS {
+  color: #264DE4;
+}
+
+.destaqueJS {
+  color: #E5A228;
+}
+
+.rodape {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-}
-
-#html img {
-  margin: 50px;
-  width: 200px;
-  height: 200px;
-}
-
-#html h3 {
-  max-width: 500px;
-}
-
-#css {
-  background-color: #264DE4;
-  height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-#css img {
-  margin: 50px;
-  width: 200px;
-  height: 200px;
-}
-
-#css h3 {
-  max-width: 500px;
-}
-
-#js {
-  background-color: #E5A228;
-  height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-#js img {
-  margin: 50px;
-  width: 200px;
-  height: 200px;
-}
-
-#js h3 {
-  max-width: 500px;
-}
-
-#links {
-  display: -ms-grid;
-  display: grid;
-}
-
-#links #colunas {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 200px 200px 200px;
-      grid-template-columns: 200px 200px 200px;
-}
-
-#links section {
-  display: block;
-}
-
-#links img {
-  width: 32px;
-  height: 32px;
-}
-
-footer {
-  height: 70px;
+  color: #FFFFFF;
   background-color: #000000;
-  color: white;
 }
 
-footer p {
-  margin-left: 16px;
+.rodape img {
+  width: 32px;
+  width: 32px;
 }
 
-footer section img {
-  margin: 8px;
-  max-width: 48px;
-  max-height: 48px;
+@media (orientation: landscape) {
+  #destaque {
+    background-size: 110vw;
+  }
+}
+
+@media (orientation: portrait) {
+  #destaque {
+    background-size: 200vw;
+  }
+}
+
+@media (min-width: 0) {
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+  .menu {
+    height: 50px;
+  }
+  .menu ul {
+    height: 50px;
+  }
+}
+
+@media (min-width: 576px) and (orientation: portrait) {
+  #logo {
+    width: 200px;
+    height: 200px;
+  }
+  .menu {
+    height: 100px;
+  }
+  .menu ul {
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  #logo {
+    width: 200px;
+    height: 200px;
+  }
+  .menu {
+    height: 100px;
+  }
+  .menu ul {
+    height: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  #logo {
+    width: 260px;
+    height: 260px;
+  }
+  .menu {
+    height: 130px;
+  }
+  .menu ul {
+    height: 130px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

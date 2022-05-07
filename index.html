@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet"> 
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,59 +19,55 @@
     <meta name="author" content="Igor Santos">
 
     <!--Icone de Página-->
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon-32x32.png">
 </head>
 <body>
 
-    <header>
-        <img src="img/favicon.png" alt="">
-        <nav>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Links Úteis</li>
+    <header class="flex-container-row menu">
+        <img id="logo" src="img/favicon.png" alt="">
+        <nav">
+            <ul class="flex-container-row">
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">JavaScript</a></li>
+                <li><a href="">Links Úteis</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Aprenda <mark>HTML5</mark>, <mark>CSS3</mark> e <mark>JavaScript</mark></h1>
+    <main id="destaque" class="flex-container-column">
+        <h1>Aprenda <mark class="destaqueHTML">HTML5</mark>, <mark class="destaqueCSS">CSS3</mark> e <mark class="destaqueJS">JavaScript</mark></h1>
 
-        <h2>Escrever com <mark>semântica</mark>!</h2>
-        <h2>Aplicar <mark>estilos</mark> modernos!</h2>
-        <h2>Obter uma melhor <mark>interação!</mark></h2>
+        <h2>Escrever com <mark class="destaqueHTML">semântica</mark>!</h2>
+        <h2>Aplicar <mark class="destaqueCSS">estilos</mark> modernos!</h2>
+        <h2>Obter uma melhor <mark  class="destaqueJS">interação!</mark></h2>
     </main>
 
     <section id="html">
 
         <img src="img/HTML5.png" alt="">
 
-        <section class="conteudo">
-            <h2>
-                HTML 5
-            </h2>
-            
-            <h3>A HTML é a linguagem principal da web</h3>
-            <p>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.</p>
-    
-            <a href="#">Saiba mais</a>
-        </section>
+        <h2>
+            HTML 5
+        </h2>
+        
+        <h3>A HTML é a linguagem principal da web</h3>
+        <p>A HTML5 modifica a forma como escrevemos código e organizamos a informação na página. Seria mais semântica com menos código. Seria mais interatividade sem a necessidade de instalação de plugins e perda de performance. É a criação de código interoperável, pronto para futuros dispositivos e que facilita a reutilização da informação de diversas formas.</p>
+
+        <a class="button" href="#">Saiba mais</a>
         
     </section>
     
     <section id="css">
 
-        <section class="conteudo">
-            <h2>
-                CSS3
-            </h2>
-    
-            <h3>O CSS complementa o HTML</h3>
-            <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.</p>
-    
-            <a href="#">Saiba mais</a>
-        </section>
+        <h2>
+            CSS3
+        </h2>
+
+        <h3>O CSS complementa o HTML</h3>
+        <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou seja, elas servem para otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o usuário.</p>
+
+        <a class="button" href="#">Saiba mais</a>
         
         <img src="img/CSS3.png" alt="">
 
@@ -77,17 +77,15 @@
 
         <img src="img/JS.png" alt="">
 
-        <section class="conteudo">
-            <h2>
-                JavaScript
-            </h2>
-    
-            <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
-            <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).
-            </p>
-    
-            <a href="#">Saiba mais</a>
-        </section>
+        <h2>
+            JavaScript
+        </h2>
+
+        <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
+        <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).
+        </p>
+
+        <a class="button" href="#">Saiba mais</a>
         
     </section>
 
@@ -96,99 +94,87 @@
             Links Úteis
         </h2>
         
-        <section id="colunas">
-            <!--Planejamento-->
-            <section>
-                <h3>Planejamento</h3>
-                <ul>
-                    <li>
-                        <img src="img/Figma Icon.png" alt="">
-                        <a href="https://www.figma.com/">Figma</a>
-                    </li>
-                    <li>
-                        <img src="img/Google Icon.png" alt="">
-                        <a href="https://fonts.google.com/">Google Fonts</a>
-                    </li>
-                    <li>
-                        <img src="img/The Unicode Consortium Icon.png" alt="">
-                        <a href="https://home.unicode.org/">unicode.org</a>
-                    </li>
-                    <li>
-                        <img src="img/Realfavicongenerator Logo.png" alt="">
-                        <a href="https://realfavicongenerator.net/">Favicon Generator</a>
-                    </li>
-                    <li>
-                        <img src="img/Bootstrap Icon.png" alt="">
-                        <a href="https://getbootstrap.com/">Bootstrap</a>
-                    </li>
-                </ul>
-            </section>
-            
-            <!--Programação-->
-            <section>
-                <h3>Programação</h3>
-                <ul>
-                    <li> 
-                        <img src="img/Git Logo.png" alt="">
-                        <a href="https://git-scm.com/">Git</a>
-                    </li>
-                    <li> 
-                        <img src="img/Github Icon.png" alt="">
-                        <a href="https://github.com/">Github</a>
-                    </li>
-                    <li> 
-                        <img src="img/Visual Studio Code Logo.png" alt="">
-                        <a href="https://code.visualstudio.com/">VS Code</a>
-                    </li>
-                    <li> 
-                        <img src="img/Node.js Icon.png" alt="">
-                        <a href="https://nodejs.org/en/">Node.js</a>
-                    </li>
-                </ul>
-            </section>
+        <h3>Planejamento</h3>
+        <ul>
+            <li>
+                <img src="img/Figma_icon.png" alt="">
+                <a href="https://www.figma.com/">Figma</a>
+            </li>
+            <li>
+                <img src="img/Google_icon.png" alt="">
+                <a href="https://fonts.google.com/">Google Fonts</a>
+            </li>
+            <li>
+                <img src="img/Unicode_icon.png" alt="">
+                <a href="https://home.unicode.org/">unicode.org</a>
+            </li>
+            <li>
+                <img src="img/Realfavicongenerator_icon.png" alt="">
+                <a href="https://realfavicongenerator.net/">Favicon Generator</a>
+            </li>
+            <li>
+                <img src="img/Bootstrap_icon.png" alt="">
+                <a href="https://getbootstrap.com/">Bootstrap</a>
+            </li>
+        </ul>
 
-            <!--Ajuda-->
-            <section>
-                <h3>Ajuda</h3>
-                <ul>
-                    <li> 
-                        <img src="img/W3C Brasil Logo.png" alt="">
-                        <a href="https://www.w3.org/">W3C</a>
-                    </li>
-                    <li> 
-                        <img src="img/World Wide Web Consortium Logo.png" alt="">
-                        <a href="https://validator.w3.org/">Validador HTML</a>
-                    </li>
-                    <li> 
-                        <img src="img/World Wide Web Consortium Logo.png" alt="">
-                        <a href="https://jigsaw.w3.org/css-validator/">Validador CSS</a>
-                    </li>
-                    <li> 
-                        <img src="img/W3C Brasil Logo.png" alt="">
-                        <a href="https://www.w3c.br/">W3C Brasil</a>
-                    </li>
-                    <li> 
-                        <img src="img/W3Schools Icon.png" alt="">
-                        <a href="https://www.w3schools.com/">W3schools</a>
-                    </li>
-                </ul>
-            </section>
-        </section>
-        
+        <h3>Programação</h3>
+        <ul>
+            <li> 
+                <img src="img/Git_icon.png" alt="">
+                <a href="https://git-scm.com/">Git</a>
+            </li>
+            <li> 
+                <img src="img/Github_icon.png" alt="">
+                <a href="https://github.com/">Github</a>
+            </li>
+            <li> 
+                <img src="img/Visual_Studio_Code_icon.png" alt="">
+                <a href="https://code.visualstudio.com/">VS Code</a>
+            </li>
+            <li> 
+                <img src="img/Node.js_icon.png" alt="">
+                <a href="https://nodejs.org/en/">Node.js</a>
+            </li>
+        </ul>
+
+        <h3>Ajuda</h3>
+        <ul>
+            <li> 
+                <img src="img/W3C_Brasil_icon.png" alt="">
+                <a href="https://www.w3.org/">W3C</a>
+            </li>
+            <li> 
+                <img src="img/W3Schools_icon.png" alt="">
+                <a href="https://validator.w3.org/">Validador HTML</a>
+            </li>
+            <li> 
+                <img src="img/W3Schools_icon.png" alt="">
+                <a href="https://jigsaw.w3.org/css-validator/">Validador CSS</a>
+            </li>
+            <li> 
+                <img src="img/W3Schools_icon.png" alt="">
+                <a href="https://www.w3c.br/">W3C Brasil</a>
+            </li>
+            <li> 
+                <img src="img/W3Schools_icon.png" alt="">
+                <a href="https://www.w3schools.com/">W3schools</a>
+            </li>
+        </ul>
     </section>
 
-    <footer>
+    <footer class="flex-container-row rodape">
         <p>
             © 2022 - Jobson Tenório do Nascimento
         </p>
         
-        <section>
-            <img src="img/WhatsApp Inc. Logo.png" alt="">
-            <img src="img/Gmail Icon.png" alt="">
-            <img src="img/YouTube Icon.png" alt="">
-            <img src="img/Facebook Icon.png" alt="">
-            <img src="img/Instagram Icon undefined.png" alt="">
-        </section>
+        <div>
+            <img src="img/WhatsApp_icon.png" alt="">
+            <img src="img/Gmail_icon.png" alt="">
+            <img src="img/YouTube_icon.png" alt="">
+            <img src="img/Facebook_icon.png" alt="">
+            <img src="img/Instagram_icon.png" alt="">
+        </div>
 
     </footer>
 </body>

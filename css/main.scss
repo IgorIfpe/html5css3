@@ -1,40 +1,90 @@
 @import "_base";
+@import "_screens";
 
-//Map de size de telas
-$breakpoints: (
-  xs: 0,        //Smartphones em modo retrato
-  sm: 576px,    //Smartphones em modo paisagem ou Tablets em modo retrato
-  md: 768px,    //Tablets em modo paisagem
-  lg: 992px,    //Desktops
-  xl: 1200px,   //Desktops com alta definição HD e FHD
-  xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
-);
+//Paisagem
+@media (orientation: landscape){
+    #destaque{
+        background-size: 110vw;
+    }
+}
 
-@mixin body-color($color) {
-
+//Retrato
+@media (orientation: portrait){
+    #destaque{
+        background-size: 200vw;
+    }
 }
 
 //Tratamento para diferents tipos de telas
-@media (min-width: map-get($breakpoints, x1)) {
-    @include body-color(white);
+@media (min-width: map-get($breakpoints, xs)) {
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu{
+        height: 50px;
+
+        ul{
+            height: 50px;
+        }
+    }
 }
 
-@media (min-width: map-get($breakpoints, sm)) {
-    @include body-color(black);
+//Smartphone em modo paisagem
+@media (min-width: map-get($breakpoints, sm)) and (orientation: landscape) {
+    
 }
 
+//Smartphone em modo retrato
+@media (min-width: map-get($breakpoints, sm)) and (orientation: portrait) {
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu{
+        height: 100px;
+
+        ul{
+            height: 100px;
+        }
+    }
+}
+
+//Table em modo paisagem
 @media (min-width: map-get($breakpoints, md)) {
-    @include body-color(red);
+    #logo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu{
+        height: 100px;
+
+        ul{
+            height: 100px;
+        }
+    }
 }
 
+//Desktop
 @media (min-width: map-get($breakpoints, lg)) {
-    @include body-color(yellow);
+    #logo{
+        width: 260px;
+        height: 260px;
+    }
+
+    .menu{
+        height: 130px;
+
+        ul{
+            height: 130px;
+        }
+    }
 }
 
+//Desktop de Alta Resolução
 @media (min-width: map-get($breakpoints, xl)) {
-    
-}
 
-@media (min-width: map-get($breakpoints, xl)) {
-    
 }
