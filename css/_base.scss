@@ -16,10 +16,6 @@
         list-style-type: none;
     }
 
-    a{
-        text-decoration: none;
-    }
-
     mark{
         background-color: inherit;
     }
@@ -44,6 +40,16 @@
 .menu{
     justify-content: space-between;
     background-color: $backgroundSecundaryColor;
+    align-items: flex-start;
+
+    a{
+        color: $fontSecundaryColor;
+        text-decoration: none;
+    }
+
+    li{
+        margin: 20px;
+    }
 }
 
 main, section{
@@ -78,6 +84,22 @@ main, section{
 
 .destaqueJS{
     color: $primaryJsColor;
+}
+
+#html{
+    background: $gradienteHTML;
+}
+
+#css{
+    background: $gradienteCSS;
+}
+
+#js{
+    background: $gradienteJS;
+}
+
+#links{
+    background: $gradienteLinks;
 }
 
 .rodape{
