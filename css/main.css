@@ -161,8 +161,17 @@ main, section {
 }
 
 .section-details {
-  width: 70vw;
+  width: 45vw;
   padding: 3vw;
+  text-align: justify;
+}
+
+.section-details h3 {
+  text-align: center;
+}
+
+.section-details a {
+  text-align: center;
 }
 
 #html {
@@ -183,6 +192,11 @@ main, section {
 #links {
   background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
   background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+}
+
+.conteudo-sections {
+  width: 500px;
+  text-align: justify;
 }
 
 .rodape {
@@ -209,6 +223,12 @@ main, section {
 @media (orientation: landscape) {
   #destaque {
     background-size: 110vw;
+  }
+  #inverter-flex-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 

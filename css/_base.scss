@@ -124,8 +124,17 @@ main, section{
 }
 
 .section-details {
-    width: 70vw;
+    width: 45vw;
     padding: 3vw;
+    text-align: justify;
+
+    h3{
+        text-align: center;
+    }
+
+    a{
+        text-align: center;
+    }
 }
 
 #html{
@@ -142,6 +151,11 @@ main, section{
 
 #links{
     background: $gradienteLinks;
+}
+
+.conteudo-sections{
+    width: 500px;
+    text-align: justify;
 }
 
 .rodape{
