@@ -148,6 +148,10 @@ main, section {
   background-repeat: no-repeat;
 }
 
+#destaque h1 {
+  margin-bottom: 10vh;
+}
+
 .destaqueHTML {
   color: #E44D26;
 }
@@ -195,7 +199,7 @@ main, section {
 }
 
 .conteudo-sections {
-  width: 500px;
+  width: 70vw;
   text-align: justify;
 }
 
@@ -234,7 +238,7 @@ main, section {
 
 @media (orientation: portrait) {
   #destaque {
-    background-size: 200vw;
+    background-size: 300vw;
   }
 }
 
@@ -248,6 +252,36 @@ main, section {
   }
   .menu ul {
     height: 50px;
+  }
+  .section-details {
+    width: 90vw;
+  }
+  .conteudo-img img {
+    width: 150px;
+    height: 150px;
+  }
+  #links {
+    height: 100vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #links .listaDeLinks {
+    width: 60vw;
+  }
+  #links .listaDeLinks a {
+    font-size: 14px;
+  }
+  #links .listaDeLinks img {
+    width: 32px;
+    height: 32px;
+  }
+  #destaque h1 {
+    font-size: 24px;
+  }
+  #destaque h2 {
+    font-size: 18px;
   }
 }
 
@@ -287,6 +321,36 @@ main, section {
   }
   .menu ul {
     height: 130px;
+  }
+  .section-details {
+    width: 45vw;
+  }
+  .conteudo-img img {
+    width: 250px;
+    height: 250px;
+  }
+  #links {
+    height: 70vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #links .listaDeLinks {
+    width: 30vw;
+  }
+  #links .listaDeLinks a {
+    font-size: 16px;
+  }
+  #links .listaDeLinks img {
+    width: 50px;
+    height: 50px;
+  }
+  #destaque h1 {
+    font-size: 40px;
+  }
+  #destaque h2 {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */

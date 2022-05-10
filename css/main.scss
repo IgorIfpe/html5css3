@@ -15,7 +15,7 @@
 //Retrato
 @media (orientation: portrait){
     #destaque{
-        background-size: 200vw;
+        background-size: 300vw;
     }
 }
 
@@ -31,6 +31,46 @@
 
         ul{
             height: 50px;
+        }
+    }
+
+    .section-details {
+        width: 90vw;
+    }
+
+    .conteudo-img{
+        img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    #links{
+        height: 100vh;
+        flex-direction: row;
+
+        .listaDeLinks{
+            //Definir o tamanho completo para descer os outros
+            width: 60vw;
+    
+            a{
+                font-size: 14px;
+            }
+    
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    #destaque{
+        h1{
+            font-size: 24px;
+        }
+
+        h2{
+            font-size: 18px;
         }
     }
 }
@@ -84,6 +124,46 @@
 
         ul{
             height: 130px;
+        }
+    }
+
+    .section-details {
+        width: 45vw;
+    }
+
+    .conteudo-img{
+        img{
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    #links{
+        height: 70vh;
+        flex-direction: column;
+
+        .listaDeLinks{
+            //Definir o tamanho completo para descer os outros
+            width: 30vw;
+    
+            a{
+                font-size: 16px;
+            }
+    
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    #destaque{
+        h1{
+            font-size: 40px;
+        }
+
+        h2{
+            font-size: 30px;
         }
     }
 }

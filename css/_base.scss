@@ -109,6 +109,10 @@ main, section{
     background: url(/img/Destaque_o20.png);
     background-position: center;
     background-repeat: no-repeat;
+
+    h1{
+        margin-bottom: 10vh;
+    }
 }
  
 .destaqueHTML{
@@ -154,7 +158,7 @@ main, section{
 }
 
 .conteudo-sections{
-    width: 500px;
+    width: 70vw;
     text-align: justify;
 }
 
